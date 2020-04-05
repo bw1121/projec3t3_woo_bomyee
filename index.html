@@ -5,9 +5,10 @@
 
 		<meta charset="utf-8">
 
-		<title></title>
+		<title>Bojack Horseman</title>
 
 		<link type="text/css" rel="stylesheet" href="styles.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,11 +16,56 @@
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
 
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 	</head>
 
-	<body>
+	<body class="home">
+		<!-- HEADER -->
+		<header>
+			<!-- LOGO -->
+			<figure class="logo">
+				<img src="images/logo.svg" title="Bojack Logo" alt="Bojack Logo">
+			</figure>
 
+			<button class="hamburger">&#9776;</button>
+			<button class="cross">&#735;</button>
 
+			<!-- NAV -->
+			<nav class="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="bio.html">Bio</a></li>
+					<li><a href="movies.html">Movies/TV</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+				</ul>
+			</nav>
+
+			<!-- DESKTOP NAV -->
+			<nav class="desktop-menu">
+				<ul>
+					<li><a href="bio.html" class="hvr-grow hvr-rectangle-out">Bio</a></li>
+					<li><a href="movies.html" class="hvr-grow hvr-rectangle-out">Movies/TV</a></li>
+					<li><a href="gallery.html" class="hvr-grow hvr-rectangle-out">Gallery</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- HEADLINE -->
+		<main>
+			<div class="text-right">
+				<div class="speech-bubble">
+					<h1>BoJack Horseman</h1>
+				</div>
+			</div>
+
+			<figure class="home-bojack">
+				<img src="images/bojack-fullbody.png" alt="Bojack" title="Bojack">
+			</figure>
+		</main>
+
+		<script src="js/hamburger.js"></script>
 	</body>
 
 </html>
