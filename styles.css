@@ -74,7 +74,7 @@ header {
 	font-weight:bold;
 	font-size:0.8em;
 	width:100%;
-	background:#3c3259;
+	background:#5f4b7a;
 	position:absolute;
 	text-align:center;
 	font-size:12px;
@@ -92,7 +92,7 @@ header {
 }
 .menu li:hover{
 	display: block;
-	background:#3c3259;
+	background:#5f4b7a;
 	padding:25px 0 25px 0;
 	border-bottom:#5b4375 1px solid;
 }
@@ -140,8 +140,9 @@ main {
 	position: relative;
 	background: #f7d32c;
 	border-radius: .4em;
-	margin-top: 5%;
-	width: 70%;
+	width: 60%;
+	padding: 5%;
+	margin: 5% auto 10% 10%;
 }
 
 .speech-bubble:after {
@@ -171,7 +172,8 @@ main {
 }
 
 .home h1 {
-	padding: 5%;
+    padding-bottom: 3%;
+    font-size: 1.5rem;
 }
 
 .home-bojack {
@@ -182,6 +184,10 @@ main {
 
 /* ********** START MIN WIDTH 600PX ********** */
 @media (min-width: 600px) {
+	p {
+		font-size: 1.2rem;
+	}
+
 	.speech-bubble:after {
 		content: '';
 		position: absolute;
@@ -198,15 +204,30 @@ main {
 	}
 
 	.home main {
-		flex-direction: row-reverse
+		flex-direction: row-reverse;
+		flex-wrap: nowrap;
 	}
 
 	.speech-bubble {
-    margin-top: 30%;
+    margin-top: 15%;
+    margin-left: 10%;
 	}
 
 	.home-bojack img {
-    width: 65%;
+    width: 70%;
+	}
+
+	.ground {
+		height: 20%;
+		background-color: #20163c;
+		width: 100%;
+		position: fixed;
+		align-self: flex-end;
+		z-index: -1;
+	}
+
+	.home main {
+    align-content: flex-end;
 	}
 }
 /* ********** END MIN WIDTH 600PX ********** */
@@ -230,12 +251,13 @@ main {
 	  z-index: 1;
 	  top: 0;
 	  left: 0;
-	  background-color: #3c3259;
+	  background-color: #5f4b7a;
 	  overflow-x: hidden; /* Disable horizontal scroll */
 		font-family: 'Ubuntu', sans-serif;
 		display: flex;
 		align-content: flex-start;
 		padding: 30px 0;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 	}
 
 	.logo {
@@ -249,8 +271,11 @@ main {
 
 	.desktop-menu ul li {
 		list-style-type: none;
-		border-bottom: #5b4375 1px solid;
-		border-top :#5b4375 1px solid;
+		border-bottom: #20163c 1px solid;
+	}
+
+	.desktop-menu ul li:first-child {
+		border-top :#20163c 1px solid;
 	}
 
 	.desktop-menu ul li a {
@@ -287,7 +312,7 @@ main {
 	  transform: perspective(1px) translateZ(0);
 	  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 	  position: relative;
-	  background: #3c3259;
+	  background: #5f4b7a;
 	  -webkit-transition-property: color;
 	  transition-property: color;
 	  -webkit-transition-duration: 0.3s;
@@ -329,10 +354,35 @@ main {
 	}
 
 	.home-bojack img {
-    width: 55%;
+    height: 65%;
+	}
+
+	.home main {
+		height: 80%;
+	}
+
+	.speech-bubble {
+    margin: 0 5% 35% 15%;
+	}
+
+	.text-right {
+		align-self: center;
 	}
 }
 /* ********** END MIN WIDTH 800PX ********** */
+
+
+/* ********** START MIN WIDTH 1000PX ********** */
+@media (min-width: 1000px) {
+	.home-bojack img {
+    width: 65%;
+	}
+
+	.speech-bubble {
+    margin: 0 5% 35% 5%;
+	}
+}
+/* ********** END MIN WIDTH 1000PX ********** */
 
 
 /* ********** START MIN WIDTH 1440PX ********** */
@@ -344,6 +394,20 @@ main {
 	.home-bojack {
     padding-right: 3%;
 	}
+
+	/* .ground {
+		height: 20%;
+		background-color: #20163c;
+		width: 100%;
+		position: fixed;
+		align-self: flex-end;
+		z-index: -1;
+	}
+
+	.home main {
+		height: 80%;
+    align-content: flex-end;
+	} */
 
 }
 /* ********** END MIN WIDTH 1440PX ********** */
