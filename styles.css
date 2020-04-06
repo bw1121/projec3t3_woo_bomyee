@@ -12,6 +12,15 @@ h1, h2, h3 {
 	font-family: 'Ubuntu', sans-serif;
 }
 
+h1 {
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 1.1rem;
+	padding-bottom: 3%;
+}
+
 p {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -173,13 +182,85 @@ main {
 
 .home h1 {
     padding-bottom: 3%;
-    font-size: 1.5rem;
 }
 
 .home-bojack {
 	align-self: flex-end;
 	padding-top: 15px;
 }
+
+/* ********** BIOGRAPHY ********** */
+
+.container {
+	padding: 0 5% 20%;
+}
+
+.bio {
+	background-image: url("images/house.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.bio-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.bio-img {
+	width: 60%;
+	display: flex;
+	align-items: flex-end;
+}
+
+.bio-img img {
+	width: 100%;
+}
+
+.bio h1 {
+	background-color: #5f4b7a;
+	color: #fff;
+	padding: 5%;
+	text-align: center;
+	width: 100%;
+}
+
+.bio-content {
+	width: 100%;
+}
+
+.bio-content article {
+	padding: 7% 5%;
+	background-color: #1f153cb3;
+	margin: 10% 0;
+	color: #fff;
+}
+
+.bio-content ul li {
+	list-style-type: none;
+	font-family: 'Open Sans', sans-serif;
+	padding-bottom: 3%;
+}
+
+.bio-top {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.button {
+	padding: 10px;
+	background-color: #f7d32c;
+	border-radius: 5px;
+	font-family: 'Ubuntu', sans-serif;
+	text-decoration: none;
+	color: #000;
+	margin-top: 5%;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
 
 
 /* ********** START MIN WIDTH 600PX ********** */
@@ -228,6 +309,14 @@ main {
 
 	.home main {
     align-content: flex-end;
+	}
+
+	.bio-img {
+    width: 40%;
+	}
+
+	.bio-content article {
+    margin: 5% 0;
 	}
 }
 /* ********** END MIN WIDTH 600PX ********** */
@@ -284,6 +373,7 @@ main {
 		text-decoration: none;
 		padding: 25px 0;
 		display: block;
+		text-align: center;
 	}
 
 	/* Grow https://ianlunn.github.io/Hover/  */
@@ -368,6 +458,16 @@ main {
 	.text-right {
 		align-self: center;
 	}
+
+	.container {
+		width: 65%;
+		margin-left: 25%;
+		padding-top: 5%;
+	}
+
+	.bio h1 {
+		height: fit-content;
+	}
 }
 /* ********** END MIN WIDTH 800PX ********** */
 
@@ -380,6 +480,27 @@ main {
 
 	.speech-bubble {
     margin: 0 5% 35% 5%;
+	}
+
+	.bio-container {
+		max-width: 720px;
+	}
+
+	.container {
+		display: flex;
+		justify-content: center;
+	}
+
+	.bio-img {
+		width: 35%;
+	}
+
+	.bio h1 {
+    padding: 3.5%;
+	}
+
+	.bio-content article {
+    margin: 3% 0 4%;
 	}
 }
 /* ********** END MIN WIDTH 1000PX ********** */
@@ -394,20 +515,6 @@ main {
 	.home-bojack {
     padding-right: 3%;
 	}
-
-	/* .ground {
-		height: 20%;
-		background-color: #20163c;
-		width: 100%;
-		position: fixed;
-		align-self: flex-end;
-		z-index: -1;
-	}
-
-	.home main {
-		height: 80%;
-    align-content: flex-end;
-	} */
 
 }
 /* ********** END MIN WIDTH 1440PX ********** */
