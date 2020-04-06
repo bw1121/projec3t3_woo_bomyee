@@ -295,6 +295,55 @@ main {
     margin: 10px 0 15px 0;
 }
 
+/* ********** FRIENDS ********** */
+
+.friends {
+	background-image: url("../images/house-gate.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.friends h1 {
+	padding: 5% 0;
+}
+
+.friends-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.friends-container figure {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.friend-img {
+	width: 100%;
+}
+
+.friend-img img {
+	width: 50%;
+}
+
+.friends-container figcaption {
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #5f4b7a;
+	color: #fff;
+	padding: 3%;
+	width: fit-content;
+}
+
+.bubble-hide {
+	display: none;
+}
+
 
 
 /* ********** START MIN WIDTH 600PX ********** */
@@ -351,6 +400,14 @@ main {
 
 	.bio-content article {
     margin: 5% 0;
+	}
+
+	.friends-container figure {
+		width: 50%;
+	}
+
+	.friend-img img {
+    width: 60%;
 	}
 }
 /* ********** END MIN WIDTH 600PX ********** */
@@ -536,6 +593,10 @@ main {
 	.bio-content article {
     margin: 3% 0 4%;
 	}
+
+	.friends .container {
+		flex-wrap: wrap;
+	}
 }
 /* ********** END MIN WIDTH 1000PX ********** */
 
@@ -550,5 +611,12 @@ main {
     padding-right: 3%;
 	}
 
+	.friends-container figure {
+		width: 33.33333%;
+	}
+
+	.friend-img img {
+		width: 70%;
+	}
 }
 /* ********** END MIN WIDTH 1440PX ********** */
