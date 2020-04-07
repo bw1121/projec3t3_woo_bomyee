@@ -7,7 +7,6 @@
 
 		<title>Bojack Horseman | Friends</title>
 
-		<link type="text/css" rel="stylesheet" href="css/styles.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,6 +17,10 @@
 
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.0.9/dist/jBox.all.min.js"></script>
+		<link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.0.9/dist/jBox.all.min.css" rel="stylesheet">
+
+		<link type="text/css" rel="stylesheet" href="css/styles.css" />
 
 	</head>
 
@@ -55,84 +58,92 @@
 
 		<!-- MAIN -->
 		<main class="container">
-			<h1>BoJack's Friends</h1>
+			<div class="max-width">
+				<h1>BoJack's Friends</h1>
 
-			<div class="friends-container">
-				<figure>
-					<div class="friend-img">
-						<img src="images/diane.png" title="" alt="">
-					</div>
-					<figcaption>Diane Nguyen</figcaption>
-					<div class="speech-bubble bubble-hide">
-						<p></p>
-					</div>
-				</figure>
+				<div class="friends-container">
+					<figure>
+						<div class="friend-img">
+							<img src="images/diane.png" title="" alt="">
+						</div>
+						<figcaption class="tooltip" title="Diane was the ghost writer for BoJack's biographical book called 'One Trick Pony'. She became close friends with BoJack when she started working for him.">Diane Nguyen</figcaption>
+						<div class="speech-bubble bubble-hide">
+							<p></p>
+						</div>
+					</figure>
 
-				<figure>
-					<div class="friend-img">
-						<img src="images/todd.png" title="" alt="">
-					</div>
-					<figcaption>Todd Chavez</figcaption>
-					<div class="speech-bubble bubble-hide">
-						<p></p>
-					</div>
-				</figure>
+					<figure>
+						<div class="friend-img">
+							<img src="images/todd.png" title="" alt="">
+						</div>
+						<figcaption class="tooltip" title="Todd lives with BoJack and tags along on most of his adventures. BoJack considers him as his best friend.">Todd Chavez</figcaption>
+						<div class="speech-bubble bubble-hide">
+							<p></p>
+						</div>
+					</figure>
 
-				<figure>
-					<div class="friend-img">
-						<img src="images/carolyn.png" title="" alt="">
-					</div>
-					<figcaption>Princess Carolyn</figcaption>
-					<div class="speech-bubble bubble-hide">
-						<p></p>
-					</div>
-				</figure>
+					<figure>
+						<div class="friend-img">
+							<img src="images/carolyn.png" title="" alt="">
+						</div>
+						<figcaption class="tooltip" title="Princess Carloyn is BoJack's agent but also his former girlfriend. She often helps him resolve his problems.">Princess Carolyn</figcaption>
+						<div class="speech-bubble bubble-hide">
+							<p></p>
+						</div>
+					</figure>
 
-				<figure>
-					<div class="friend-img">
-						<img src="images/peanutbutter.png" title="" alt="">
-					</div>
-					<figcaption>Mr. Peanutbutter</figcaption>
-					<div class="speech-bubble bubble-hide">
-						<p></p>
-					</div>
-				</figure>
+					<figure>
+						<div class="friend-img">
+							<img src="images/peanutbutter.png" title="" alt="">
+						</div>
+						<figcaption class="tooltip" title="Mr. Peanutbutter is also an actor and looks up with BoJack. BoJack knows him well but often gets annoyed by Mr. Peanutbutter's happy, content attitude.">Mr. Peanutbutter</figcaption>
+						<div class="speech-bubble bubble-hide">
+							<p></p>
+						</div>
+					</figure>
 
-				<figure>
-					<div class="friend-img">
-						<img src="images/charlotte.png" title="" alt="">
-					</div>
-					<figcaption>Charlotte Carson</figcaption>
-					<div class="speech-bubble bubble-hide">
-						<p></p>
-					</div>
-				</figure>
+					<figure>
+						<div class="friend-img">
+							<img src="images/charlotte.png" title="" alt="">
+						</div>
+						<figcaption class="tooltip" title="Charlotte was BoJack's close friend in his early days in LA. Charlotte, Herb and BoJack often hung out and talked about their future dreams.">Charlotte Carson</figcaption>
+						<div class="speech-bubble bubble-hide">
+							<p></p>
+						</div>
+					</figure>
 
-				<figure>
-					<div class="friend-img">
-						<img src="images/herb.png" title="" alt="">
-					</div>
-					<figcaption>Herb Kazzaz</figcaption>
-					<div class="speech-bubble bubble-hide">
-						<p></p>
-					</div>
-				</figure>
+					<figure>
+						<div class="friend-img">
+							<img src="images/herb.png" title="" alt="">
+						</div>
+						<figcaption class="tooltip" title="Herb was BoJack's best friend before they had a falling out during the height of his career. Herb was able to get BoJack casted in Horsin' Around.">Herb Kazzaz</figcaption>
+						<div class="speech-bubble bubble-hide">
+							<p></p>
+						</div>
+					</figure>
 
-				<figure>
-					<div class="friend-img">
-						<img src="images/sarahlynn.png" title="" alt="">
-					</div>
-					<figcaption>Sarah Lynn</figcaption>
-					<div class="speech-bubble bubble-hide">
-						<p></p>
-					</div>
-				</figure>
+					<figure>
+						<div class="friend-img">
+							<img src="images/sarahlynn.png" title="" alt="">
+						</div>
+						<figcaption class="tooltip" title="Sarah Lynn was a little kid when she and BoJack worked together on Horsin' Around. He and Sarah reconnected later.">Sarah Lynn</figcaption>
+						<div class="speech-bubble bubble-hide">
+							<p></p>
+						</div>
+					</figure>
+				</div>
+
+				<div class="text-box">
+					<p>Although BoJack is distant and doesn&rsquo;t like close relationships, he has a group of friends around him that help him through his times of need.</p>
+					<p>He often strains and loses relationships with his close friends due to his personal issues and poor choices.</p>
+				</div>
 			</div>
 		</main>
 
 
 
 		<script src="js/hamburger.js"></script>
+		<script src="js/tooltips.js"></script>
 	</body>
 
 </html>

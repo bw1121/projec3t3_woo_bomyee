@@ -24,6 +24,7 @@ h2 {
 
 p {
 	font-family: 'Open Sans', sans-serif;
+	padding-bottom: 4%;
 }
 
 /* ********** HEADER ********** */
@@ -232,10 +233,7 @@ main {
 }
 
 .bio-content article {
-	padding: 7% 5%;
-	background-color: #1f153cb3;
 	margin: 10% 0;
-	color: #fff;
 }
 
 .bio-content ul li {
@@ -303,21 +301,22 @@ main {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	text-align: center;
 }
 
 .friends h1 {
-	padding: 5% 0;
+	padding-bottom: 2%;
 }
 
 .friends-container {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	padding-top: 5%;
 }
 
 .friends-container figure {
 	width: 100%;
-	text-align: center;
 	padding-bottom: 10%;
 	display: flex;
 	justify-content: center;
@@ -340,8 +339,29 @@ main {
 	width: fit-content;
 }
 
+.friends-container figcaption:hover {
+	background-color: #20163c;
+}
+
 .bubble-hide {
 	display: none;
+}
+
+.jBox-container {
+	width: 270px;
+	background-color: #f7d32c;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.jBox-pointer-bottom:after {
+	background-color: #f7d32c;
+}
+
+.text-box {
+	padding: 7% 5%;
+	background-color: #1f153cb3;
+	color: #fff;
+	text-align: left;
 }
 
 
@@ -507,7 +527,7 @@ main {
 	  left: 0;
 	  right: 0;
 	  bottom: 0;
-	  background: #5b4375;
+	  background: #20163c;
 	  -webkit-transform: scale(0);
 	  transform: scale(0);
 	  -webkit-transition-property: transform;
@@ -565,6 +585,10 @@ main {
 
 /* ********** START MIN WIDTH 1000PX ********** */
 @media (min-width: 1000px) {
+	p {
+		padding-bottom: 2%;
+	}
+
 	.home-bojack img {
     width: 65%;
 	}
@@ -617,6 +641,14 @@ main {
 
 	.friend-img img {
 		width: 70%;
+	}
+
+	.max-width {
+		max-width: 930px;
+	}
+
+	.text-box {
+    padding: 5%;
 	}
 }
 /* ********** END MIN WIDTH 1440PX ********** */
