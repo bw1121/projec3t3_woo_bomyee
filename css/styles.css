@@ -243,7 +243,7 @@ main {
 	text-align: center;
 }
 
-.bio-content article {
+.text-box {
 	margin: 10% 0;
 	text-align: center;
 }
@@ -338,7 +338,7 @@ main {
 	padding-top: 5%;
 }
 
-.friends-container figure {
+.friends-container .img-container {
 	width: 100%;
 	padding-bottom: 10%;
 	display: flex;
@@ -437,15 +437,19 @@ main {
     align-content: flex-end;
 	}
 
+	.bio-top {
+		width: 90%;
+	}
+
 	.bio-img {
     width: 40%;
 	}
 
-	.bio-content article {
-    margin: 5% 0;
+.text-box {
+    margin: 5%;
 	}
 
-	.friends-container figure {
+	.friends-container .img-container {
 		width: 50%;
 	}
 
@@ -568,7 +572,6 @@ main {
 	  transform: scale(1);
 	}
 
-	/* Home main */
 	.home main {
 		width: 75%;
 		margin-left: 25%;
@@ -596,7 +599,7 @@ main {
 	.container {
 		width: 75%;
 		margin-left: 25%;
-		padding-top: 5%;
+		padding: 5% 0 20%;
 	}
 
 	.bio h1 {
@@ -609,6 +612,10 @@ main {
 
 	.timeline h3 {
 		font-size: 1.3rem;
+	}
+
+	.career .container {
+		padding: 5%;
 	}
 }
 /* ********** END MIN WIDTH 800PX ********** */
@@ -645,12 +652,20 @@ main {
     padding: 3.5%;
 	}
 
-	.bio-content article {
+	.bio-content .text-box {
     margin: 3% 0 4%;
+	}
+
+	.bio-top {
+		width: 100%;
 	}
 
 	.friends .container {
 		flex-wrap: wrap;
+	}
+
+	.max-width {
+		max-width: 930px;
 	}
 }
 /* ********** END MIN WIDTH 1000PX ********** */
@@ -666,16 +681,12 @@ main {
     padding-right: 3%;
 	}
 
-	.friends-container figure {
+	.friends-container .img-container {
 		width: 33.33333%;
 	}
 
 	.friend-img img {
 		width: 70%;
-	}
-
-	.max-width {
-		max-width: 930px;
 	}
 
 	.text-box {
