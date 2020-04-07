@@ -230,16 +230,12 @@ main {
 
 .bio-content {
 	width: 100%;
+	text-align: center;
 }
 
 .bio-content article {
 	margin: 10% 0;
-}
-
-.bio-content ul li {
-	list-style-type: none;
-	font-family: 'Open Sans', sans-serif;
-	padding-bottom: 3%;
+	text-align: center;
 }
 
 .bio-top {
@@ -257,6 +253,23 @@ main {
 	color: #000;
 	margin-top: 5%;
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	animation-name: colorchange;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorchange {
+	0% {
+	background-color: #f7d32c;
+  }
+  50% {
+	 background-color: #20163c;
+	 color: #fff;
+  }
+	100% {
+		background-color: #f7d32c;
+		color: #000;
+	}
 }
 
 
