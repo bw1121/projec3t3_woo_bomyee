@@ -57,7 +57,7 @@ header {
   right:0;
   line-height:45px;
   padding:7px 15px 0px 15px;
-  color:#f7d32c;
+  color:#000;
   border:0;
   font-size:1.4em;
   font-weight:bold;
@@ -354,7 +354,7 @@ main {
 	width: 50%;
 }
 
-.friends-container figcaption {
+.friends-container .tooltip {
 	font-family: 'Ubuntu', sans-serif;
 	background-color: #5f4b7a;
 	color: #fff;
@@ -362,7 +362,7 @@ main {
 	width: fit-content;
 }
 
-.friends-container figcaption:hover {
+.friends-container .tooltip:hover {
 	background-color: #20163c;
 }
 
