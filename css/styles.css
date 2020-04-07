@@ -294,12 +294,12 @@ main {
 	font-size: 1.4rem;
 }
 
-.timeline h3 {
-	font-size: 1rem;
-}
-
 .timeline p {
 	font-size: 0.8rem;
+}
+
+.timeline h3 {
+	font-size: 1rem;
 }
 
 .timeline hr {
@@ -584,13 +584,21 @@ main {
 	}
 
 	.container {
-		width: 65%;
+		width: 75%;
 		margin-left: 25%;
 		padding-top: 5%;
 	}
 
 	.bio h1 {
 		height: fit-content;
+	}
+
+	.timeline p {
+		font-size: 1rem;
+	}
+
+	.timeline h3 {
+		font-size: 1.3rem;
 	}
 }
 /* ********** END MIN WIDTH 800PX ********** */
