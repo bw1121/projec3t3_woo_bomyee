@@ -154,6 +154,7 @@ main {
 	width: 60%;
 	padding: 5%;
 	margin: 5% auto 10% 10%;
+	animation: fadein ease 4s;
 }
 
 .speech-bubble:after {
@@ -189,6 +190,15 @@ main {
 .home-bojack {
 	align-self: flex-end;
 	padding-top: 15px;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 /* ********** BIOGRAPHY ********** */
